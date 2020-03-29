@@ -1,0 +1,9 @@
+{
+  "generator-nodecg": {
+    "promptValues": {
+      "authorName": "Ståle Raknes",
+      "authorEmail": "stale@raknes.net",
+      "authorUrl": ""
+    }
+  }
+}

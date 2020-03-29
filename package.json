@@ -1,0 +1,55 @@
+{
+  "name": "knowit-bug",
+  "version": "0.0.0",
+  "description": "Knowit logo",
+  "scripts": {
+    "watch:dashboard": "parcel watch src/dashboard/*.html --global window --out-dir dashboard --public-url ./",
+    "watch:graphics": "parcel watch src/graphics/*.html --global window --out-dir graphics --public-url ./",
+    "build:dashboard": "parcel build src/dashboard/*.html --global window --out-dir dashboard --public-url ./",
+    "build:graphics": "parcel build src/graphics/*.html --global window --out-dir graphics --public-url ./"
+  },
+  "author": {
+    "name": "Ståle Raknes",
+    "email": "stale@raknes.net",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [
+      {
+        "name": "knowit-bug",
+        "title": "Knowit Bug",
+        "width": 2,
+        "file": "knowit-bug.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 414,
+        "height": 94
+      }
+    ]
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.7.4",
+    "debounce": "^1.2.0",
+    "knockout": "^3.5.0",
+    "parcel-bundler": "^1.12.3"
+  },
+  "devDependencies": {
+    "sass": "^1.20.1"
+  }
+}
