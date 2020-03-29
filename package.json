@@ -1,6 +1,6 @@
 {
   "name": "knowit-bug",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Knowit logo",
   "scripts": {
     "watch:dashboard": "parcel watch src/dashboard/*.html --global window --out-dir dashboard --public-url ./",
