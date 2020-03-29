@@ -1,11 +1,11 @@
 import { observable, observableArray, applyBindings } from 'knockout';
 import debounce from 'debounce';
-import './knowit-bug.scss';
+import './knowitcg-bug.scss';
 
 ( function() {
 
     let init = false;
-    const bundle = nodecg.Replicant( 'knowit-bug' );
+    const bundle = nodecg.Replicant( 'knowitcg-bug' );
     bundle.on( 'change', newData => {
         if ( newData && !init ) {
             init = true;
