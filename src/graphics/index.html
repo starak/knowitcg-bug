@@ -83,16 +83,17 @@
 <script>
     const logo = document.getElementById( 'logo1' );
 
-    const ncgr = nodecg.Replicant( 'knowit-bug' );
+    const ncgr = nodecg.Replicant( 'knowitcg-bug' );
 
-    ncgr.on( 'change', newData => {
+    ncgr.on( 'change', (newData={}) => {
+        console.log('change',newData);
         if ( newData.visible ) {
             logo.classList.remove( 'hide' );
         } else {
             logo.classList.add( 'hide' );
         }
         document.body.className = `type${newData.type || 0} size${newData.size}`
-
+        console.log('document.body.className',document.body.className);
         if ( newData.visible ) {
             logo.style.opacity = newData.opacity / 100;
         }else{
