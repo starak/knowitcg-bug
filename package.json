@@ -28,7 +28,7 @@
     "dashboardPanels": [
       {
         "name": "knowitcg-bug",
-        "title": "Knowit Bug",
+        "title": "Knowitcg Bug",
         "width": 2,
         "file": "knowitcg-bug.html",
         "headerColor": "#525F78"
